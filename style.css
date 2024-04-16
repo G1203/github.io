@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f6ff; /* Azul claro */
+    color: #333; /* Color de texto oscuro */
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+header {
+    background-color: #007bff; /* Azul principal */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición de color de texto */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffdf00; /* Cambio de color al pasar el mouse */
+}
+
+.main-content {
+    padding: 50px;
+    text-align: center;
+}
+
+.section-with-image {
+    background-color: #fff; /* Fondo blanco para secciones */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 30px; /* Espacio entre secciones */
+    padding: 30px; /* Espacio interno */
+    transition: box-shadow 0.3s ease; /* Transición de sombra */
+    background-size: cover; /* Cubrir el espacio disponible */
+    background-position: right center; /* Alinear la imagen al lado derecho */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+}
+
+.section-with-image:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Efecto de sombra al pasar el mouse */
+}
+
+.footer {
+    background-color: #007bff; /* Azul principal */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+/* Estilos para menú responsive */
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+    nav.active ul {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .section-with-image {
+        background-position: center; /* Centrar la imagen en dispositivos pequeños */
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
